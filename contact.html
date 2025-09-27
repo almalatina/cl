@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Alma Latina - Contact</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    
+    <style>
+        /* Branding Alma Latina */
+        .text-pink { color: #e91e63 !important; }
+        .bg-pink { background-color: #e91e63 !important; }
+        .bg-gold { background-color: #fbc02d !important; }
+        .btn-pink { background-color: #e91e63 !important; color: #fff !important; border: none; }
+        .btn-pink:hover { background-color: #fbc02d !important; color: #212934 !important; }
+
+        /* Navbar */
+        .navbar-brand.logo { color: #e91e63 !important; font-weight: 700 !important; }
+        .navbar-light .navbar-nav .nav-link { color: #212934 !important; }
+        .navbar-light .navbar-nav .nav-link:hover { color: #e91e63 !important; }
+
+        /* Footer */
+        #tempaltemo_footer { background-color: #212934; color: #fff; }
+        #tempaltemo_footer a { color: #fbc02d; text-decoration: none; }
+        #tempaltemo_footer a:hover { color: #e91e63; }
+        #tempaltemo_footer .bg-black { background-color: #1d242d; }
+
+        /* Inputs */
+        .form-control { border: 1px solid #e8e8e8; }
+        .input-group-text.btn-pink { background-color: #e91e63 !important; color: #fff !important; }
+        .input-group-text.btn-pink:hover { background-color: #fbc02d !important; color: #212934 !important; cursor: pointer; }
+    </style>
+</head>
+
+<body>
+    <!-- Top Nav -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block">
+        <div class="container text-light">
+            <div class="d-flex justify-content-between w-100">
+                <div>
+                    <i class="fa fa-envelope mx-2"></i>
+                    <a class="text-light text-decoration-none" href="mailto:info@almalatina.com">info@almalatina.com</a>
+                    <i class="fa fa-phone mx-2"></i>
+                    <a class="text-light text-decoration-none" href="tel:+56912345678">+56 9 1234 5678</a>
+                </div>
+                <div>
+                    <a class="text-light" href="#"><i class="fab fa-facebook-f mx-2"></i></a>
+                    <a class="text-light" href="#"><i class="fab fa-instagram mx-2"></i></a>
+                    <a class="text-light" href="#"><i class="fab fa-twitter mx-2"></i></a>
+                    <a class="text-light" href="#"><i class="fab fa-linkedin mx-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand logo h1" href="index.html">Alma Latina</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+                <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
+                        <i class="fa fa-fw fa-search text-dark me-2"></i>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-cart-arrow-down text-dark me-2"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-light text-dark">0</span>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-user text-dark"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-light text-dark">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Modal -->
+    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="w-100 pt-1 mb-5 text-end">
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <form class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" placeholder="Search ...">
+                    <button type="submit" class="input-group-text btn-pink"><i class="fa fa-fw fa-search"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <div class="container-fluid bg-light py-5 text-center">
+        <div class="col-md-6 m-auto">
+            <h1 class="h1 text-pink">Contact Us</h1>
+            <p>Estamos aquí para ayudarte. Escríbenos tus dudas o consultas y te responderemos a la brevedad.</p>
+        </div>
+    </div>
+
+    <!-- Map -->
+    <div id="mapid" style="width: 100%; height: 300px;"></div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        var mymap = L.map('mapid').setView([-33.4489, -70.6693], 13); // Santiago, Chile
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 18,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+        }).addTo(mymap);
+        L.marker([-33.4489, -70.6693]).addTo(mymap)
+            .bindPopup("<b>Alma Latina</b><br>Santiago, Chile").openPopup();
+        mymap.scrollWheelZoom.disable();
+        mymap.touchZoom.disable();
+    </script>
+
+    <!-- Contact Form -->
+    <div class="container py-5">
+        <div class="row py-5">
+            <form class="col-md-9 m-auto">
+                <div class="row">
+                    <div class="form-group col-md-6 mb-3">
+                        <label for="name">Nombre</label>
+                        <input type="text" class="form-control mt-1" id="name" name="name" placeholder="Tu nombre">
+                    </div>
+                    <div class="form-group col-md-6 mb-3">
+                        <label for="email">Correo</label>
+                        <input type="email" class="form-control mt-1" id="email" name="email" placeholder="Tu correo">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="subject">Asunto</label>
+                    <input type="text" class="form-control mt-1" id="subject" name="subject" placeholder="Asunto">
+                </div>
+                <div class="mb-3">
+                    <label for="message">Mensaje</label>
+                    <textarea class="form-control mt-1" id="message" name="message" placeholder="Tu mensaje" rows="8"></textarea>
+                </div>
+                <div class="text-end">
+                    <button type="submit" class="btn btn-pink btn-lg px-3">Enviar Mensaje</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="tempaltemo_footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-pink border-bottom pb-3 border-light logo">Alma Latina</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><i class="fas fa-map-marker-alt fa-fw"></i> Santiago, Chile</li>
+                        <li><i class="fa fa-phone fa-fw"></i> <a href="tel:+56912345678">+56 9 1234 5678</a></li>
+                        <li><i class="fa fa-envelope fa-fw"></i> <a href="mailto:info@almalatina.com">info@almalatina.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Productos</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a href="#">Vinos en Lata</a></li>
+                        <li><a href="#">Accesorios</a></li>
+                        <li><a href="#">Rose</a></li>
+                        <li><a href="#">Estilo Femenino</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Más Información</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="about.html">Nosotros</a></li>
+                        <li><a href="shop.html">Tienda</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="w-100 bg-black py-3 text-light text-center">
+                Copyright &copy; 2025 Alma Latina | Designed 
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

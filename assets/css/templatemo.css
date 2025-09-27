@@ -1,0 +1,135 @@
+/* Typography */
+body, ul, li, p, a, label, input, div {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px !important;
+  font-weight: 300 !important;
+  color: #212934; /* Negro suave para lectura */
+}
+.h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 48px !important;
+  font-weight: 500 !important;
+  color: #e91e63; /* Rosa marca Alma Latina */
+}
+.h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px !important;
+  font-weight: 400;
+  color: #fbc02d; /* Dorado elegante */
+}
+.h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px !important;
+  color: #e91e63;
+}
+
+/* General */
+.logo { font-weight: 600 !important; color: #e91e63 !important;}
+.text-warning {  color: #fbc02d !important;} /* dorado */
+.text-muted { color: #bcbcbc !important;}
+.text-success { color: #e91e63 !important;} /* rosa Alma Latina */
+.text-light { color: #fff !important;}
+.bg-dark { background-color: #212934 !important;} /* negro suave */
+.bg-light { background-color: #fff0f5 !important;} /* rosa muy claro */
+.bg-black { background-color: #1d242d !important;}
+.bg-success { background-color: #e91e63 !important;}
+.btn-success {
+  background-color: #e91e63 !important;
+  border-color: #fbc02d !important;
+  color: #fff !important;
+  transition: all 0.3s ease;
+}
+.btn-success:hover {
+  background-color: #fbc02d !important;
+  color: #212934 !important;
+}
+.pagination .page-link:hover, .pagination .page-link.active {
+  background-color: #e91e63;
+  color: #fff;
+}
+
+/* Nav */
+#templatemo_nav_top { min-height: 40px;}
+#templatemo_nav_top * { font-size: .9em !important; color: #e91e63;}
+#templatemo_main_nav a { color: #212934;}
+#templatemo_main_nav a:hover { color: #e91e63;}
+#templatemo_main_nav .navbar .nav-icon { margin-right: 20px;}
+
+/* Hero Carousel */
+#template-mo-zay-hero-carousel { background: #fff0f5 !important;} /* rosa suave */
+
+/* Accordion */
+.templatemo-accordion a { color: #212934;}
+.templatemo-accordion a:hover { color: #e91e63;}
+
+/* Shop */
+.shop-top-menu a:hover { color: #e91e63 !important;}
+
+/* Product */
+.product-wap { 
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.15);
+  border-radius: 10px;
+}
+.product-wap .product-color-dot.color-dot-red { background:#e91e63;}
+.product-wap .product-color-dot.color-dot-blue { background:#6db4fe;}
+.product-wap .product-color-dot.color-dot-black { background:#212934;}
+.product-wap .product-color-dot.color-dot-light { background:#fff0f5;}
+.product-wap .product-color-dot.color-dot-green { background:#fbc02d;}
+.card.product-wap .card .product-overlay {
+  background: rgba(233,30,99,0.2);
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s;
+}
+.card.product-wap:hover .card .product-overlay {
+  visibility: visible;
+  opacity: 1;
+}
+.card.product-wap a { color: #212934;}
+
+/* Brand */
+.brand-img {
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: .5s;
+}
+.brand-img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* Carousel Hero */
+#template-mo-zay-hero-carousel .carousel-indicators li {
+  margin-top: -50px;
+  background-color: #e91e63;
+}
+#template-mo-zay-hero-carousel .carousel-control-next i,
+#template-mo-zay-hero-carousel .carousel-control-prev i {
+  color: #e91e63 !important;
+  font-size: 2.8em !important;
+}
+
+/* Services */
+.services-icon-wap {transition: .3s;}
+.services-icon-wap:hover, .services-icon-wap:hover i {color: #fff;}
+.services-icon-wap:hover {background: #e91e63;}
+
+/* Footer */
+#tempaltemo_footer a { color: #fbc02d;}
+#tempaltemo_footer a:hover { color: #e91e63;}
+#tempaltemo_footer ul.footer-link-list li { padding-top: 10px;}
+#tempaltemo_footer ul.footer-icons li:hover {
+  background-color: #e91e63;
+  transition: .5s;
+}
+#tempaltemo_footer ul.footer-icons li:hover i { color: #fff; transition: .5s;}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .product-wap .h3, .product-wap li, .product-wap i, .product-wap p {
+    font-size: 14px !important;
+  }
+}
+@media (min-width: 992px) {
+  .product-wap .product-color-dot { width: 12px; height: 12px; }
+}
