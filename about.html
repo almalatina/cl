@@ -16,9 +16,24 @@
     <!-- Tipografía fresca y femenina -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+    <style>
+        /* Contenedor de partículas cubriendo toda la pantalla */
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0; /* Detrás del contenido pero visible sobre el fondo */
+        }
+    </style>
 </head>
 
 <body>
+    <!-- Partículas -->
+    <div id="particles-js"></div>
+
     <!-- Top Nav -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
         <div class="container text-light">
@@ -40,36 +55,25 @@
     <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container d-flex justify-content-between align-items-center">
-
-          
-           <a class="navbar-brand align-self-center" href="index.html">
-    <img src="assets/img/logo.png" alt="Alma Latina" class="logo-img" style="height: 50px;">
-</a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" 
-                    data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" 
-                    aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand align-self-center" href="index.html">
+                <img src="assets/img/logo.png" alt="Alma Latina" class="logo-img" style="height: 50px;">
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+            <div class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between"
+                id="templatemo_main_nav">
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">Nuestra historia</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="shop.html">Colección</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contacto</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">Nuestra historia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">Colección</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
                     </ul>
                 </div>
             </div>
-
         </div>
     </nav>
 
@@ -81,146 +85,106 @@
             <li data-bs-target="#alma-hero" data-bs-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-
             <!-- Imagen 1 -->
             <div class="carousel-item active">
                 <div class="container">
                     <div class="row p-5">
                         <div class="mx-auto col-md-6 col-lg-6 order-lg-last">
-                            <img class="img-fluid rounded" src="./assets/img/about.png" alt="Vino en lata en la playa de Chile">
+                            <img class="img-fluid rounded" src="./assets/img/about.png"
+                                alt="Vino en lata en la playa de Chile">
                         </div>
                         <div class="col-lg-6 d-flex align-items-center">
                             <div class="text-align-left">
                                 <h1 class="h1 text-success">Alma Latina</h1>
                                 <h3 class="h2">El vino en lata que celebra tu momento</h3>
-                                <p>Disfruta un sorbo de frescura inspirado en los paisajes de Chile. Perfecto para tardes con amigas, afterwork y momentos de relajo.</p>
+                                <p>Disfruta un sorbo de frescura inspirado en los paisajes de Chile. Perfecto para tardes
+                                    con amigas, afterwork y momentos de relajo.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
             <!-- Imagen 2 -->
             <div class="carousel-item">
                 <div class="container">
                     <div class="row p-5">
                         <div class="mx-auto col-md-6 col-lg-6 order-lg-last">
-                            <img class="img-fluid rounded" src="./assets/img/vino-lata-cordillera.jpg" alt="Cordillera de Chile y vino en lata">
+                            <img class="img-fluid rounded" src="./assets/img/vino-lata-cordillera.jpg"
+                                alt="Cordillera de Chile y vino en lata">
                         </div>
                         <div class="col-lg-6 d-flex align-items-center">
                             <div class="text-align-left">
                                 <h1 class="h1">Identidad Chilena</h1>
                                 <h3 class="h2">Cada lata es un lugar</h3>
-                                <p>Nuestro diseño refleja paisajes icónicos de Chile: desde la playa hasta la cordillera. Una identidad para mujeres que disfrutan con estilo.</p>
+                                <p>Nuestro diseño refleja paisajes icónicos de Chile: desde la playa hasta la cordillera.
+                                    Una identidad para mujeres que disfrutan con estilo.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
             <!-- Imagen 3 -->
             <div class="carousel-item">
                 <div class="container">
                     <div class="row p-5">
                         <div class="mx-auto col-md-6 col-lg-6 order-lg-last">
-                            <img class="img-fluid rounded" src="./assets/img/vino-lata-amigas.jpg" alt="Amigas disfrutando vino en lata">
+                            <img class="img-fluid rounded" src="./assets/img/vino-lata-amigas.jpg"
+                                alt="Amigas disfrutando vino en lata">
                         </div>
                         <div class="col-lg-6 d-flex align-items-center">
                             <div class="text-align-left">
                                 <h1 class="h1">Diseñado para ti</h1>
                                 <h3 class="h2">Fresco, moderno y femenino</h3>
-                                <p>Nuestra Historia
-
-En Alma Latina creemos que cada momento merece ser celebrado con frescura y estilo. Nació la idea de un vino en lata pensado especialmente para mujeres jóvenes, independientes y modernas, que disfrutan de los pequeños placeres de la vida: un afterwork con amigas, un atardecer en la playa o una tarde de relax en la ciudad.
-
-Inspirados en los paisajes y colores de Chile, creamos un vino ligero, fresco y femenino que acompaña tus momentos sin complicaciones. Cada lata es una invitación a desconectarte, disfrutar y brindar por ti misma, porque sabemos que la vida se vive mejor cuando se saborea con libertad y alegría.
-
-Alma Latina no es solo un vino, es tu compañera de relax, estilo y momentos memorables.</p>
+                                <p>Nuestra Historia: Alma Latina nació para mujeres jóvenes que disfrutan de los pequeños
+                                    placeres de la vida...</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
-
-<!-- Sección Instagram -->
-<section class="py-5 bg-white">
-  <div class="container text-center">
-    <h2 class="h2 mb-4 text-success">Síguenos en Instagram</h2>
-    <p class="mb-4">Descubre más momentos frescos y femeninos con <strong>@AlmaLatina</strong>.  
-    Únete a nuestra comunidad y comparte tu #VinoEnLata con estilo 💚</p>
-    
-    <!-- Botón atractivo -->
-    <a href="https://www.instagram.com/TU_INSTAGRAM" target="_blank" 
-       class="btn btn-lg btn-success px-4 py-2 shadow-sm">
-      <i class="fab fa-instagram me-2"></i> Ver en Instagram
-    </a>
-
-    <!-- Opcional: Grid de imágenes de ejemplo -->
-    <div class="row mt-5">
-      <div class="col-4">
-        <img src="./assets/img/vino-lata-playa.jpg" class="img-fluid rounded shadow-sm" alt="Vino en la playa">
-      </div>
-      <div class="col-4">
-        <img src="./assets/img/vino-lata-cordillera.jpg" class="img-fluid rounded shadow-sm" alt="Vino en la cordillera">
-      </div>
-      <div class="col-4">
-        <img src="./assets/img/vino-lata-amigas.jpg" class="img-fluid rounded shadow-sm" alt="Amigas disfrutando vino">
-      </div>
+        <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#alma-hero" role="button"
+            data-bs-slide="prev">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+        <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#alma-hero" role="button"
+            data-bs-slide="next">
+            <i class="fas fa-chevron-right"></i>
+        </a>
     </div>
-  </div>
-</section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- Footer -->
-    <footer id="tempaltemo_footer">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-pink border-bottom pb-3 border-light logo">Alma Latina</h2>
-                    <ul class="list-unstyled text-light footer-link-list">
-                        <li><i class="fas fa-map-marker-alt fa-fw"></i> Santiago, Chile</li>
-                        <li><i class="fa fa-phone fa-fw"></i> <a href="tel:+56912345678">+56 9 1234 5678</a></li>
-                        <li><i class="fa fa-envelope fa-fw"></i> <a href="mailto:info@almalatina.com">info@almalatina.com</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">Productos</h2>
-                    <ul class="list-unstyled text-light footer-link-list">
-                        <li><a href="#">Vinos en Lata</a></li>
-                        <li><a href="#">Accesorios</a></li>
-                        <li><a href="#">Rose</a></li>
-                        <li><a href="#">Estilo Femenino</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">Más Información</h2>
-                    <ul class="list-unstyled text-light footer-link-list">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="about.html">Nosotros</a></li>
-                        <li><a href="shop.html">Tienda</a></li>
-                        <li><a href="contact.html">Contacto</a></li>
-                    </ul>
-                </div>
-
-            </div>
-            <div class="w-100 bg-black py-3 text-light text-center">
-                Copyright &copy; 2025 Alma Latina | Diseñado para fines educativos INACAP 2025 
-            </div>
+    <!-- Footer -->
+    <footer id="tempaltemo_footer" class="bg-dark text-light py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 Alma Latina | Todos los derechos reservados</p>
         </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": { "value": 50, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#ff3366" },
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.7, "random": true },
+                "size": { "value": 6, "random": true },
+                "move": { "enable": true, "speed": 2, "direction": "bottom", "random": false, "straight": false, "out_mode": "out" }
+            },
+            "interactivity": {
+                "events": { "onhover": { "enable": true, "mode": "repulse" }, "onclick": { "enable": true, "mode": "push" } },
+                "modes": { "repulse": { "distance": 100, "duration": 0.4 }, "push": { "particles_nb": 4 } }
+            },
+            "retina_detect": true
+        });
+    </script>
+</body>
+</html>
