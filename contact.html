@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alma Latina - Contacto</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
@@ -12,12 +12,10 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/templatemo.css">
     <link rel="stylesheet" href="assets/css/custom.css">
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    
+
     <style>
         /* Branding Alma Latina */
         .text-pink { color: #e91e63 !important; }
@@ -41,6 +39,9 @@
         .form-control { border: 1px solid #e8e8e8; }
         .input-group-text.btn-pink { background-color: #e91e63 !important; color: #fff !important; }
         .input-group-text.btn-pink:hover { background-color: #fbc02d !important; color: #212934 !important; cursor: pointer; }
+
+        /* Map */
+        #mapid { width: 100%; height: 300px; }
     </style>
 </head>
 
@@ -68,10 +69,9 @@
     <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container d-flex justify-content-between align-items-center">
-            
-           <a class="navbar-brand align-self-center" href="index.html">
-    <img src="assets/img/logo.png" alt="Alma Latina" class="logo-img" style="height: 50px;">
-</a>
+            <a class="navbar-brand align-self-center" href="index.html">
+                <img src="assets/img/logo.png" alt="Alma Latina" class="logo-img" style="height: 50px;">
+            </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -79,48 +79,34 @@
                 <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">Nuestra historia</a></li>
-                    <li class="nav-item"><a class="nav-link" href="shop.html">Coleccion</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Colección</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
                 </ul>
-        
             </div>
         </div>
     </nav>
 
-    <!-- Search Modal -->
-    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1">
-        <div class="modal-dialog modal-lg">
-            <div class="w-100 pt-1 mb-5 text-end">
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-            <form class="modal-content modal-body border-0 p-0">
-                <div class="input-group mb-2">
-                    <input type="text" class="form-control" placeholder="Search ...">
-                    <button type="submit" class="input-group-text btn-pink"><i class="fa fa-fw fa-search"></i></button>
-                </div>
-            </form>
-        </div>
-    </div>
-
     <!-- Hero -->
     <div class="container-fluid bg-light py-5 text-center">
         <div class="col-md-6 m-auto">
-            <h1 class="h1 text-pink">Contactanos</h1>
+            <h1 class="h1 text-pink">Contáctanos</h1>
             <p>Estamos aquí para ayudarte. Escríbenos tus dudas o consultas y te responderemos a la brevedad.</p>
         </div>
     </div>
 
     <!-- Map -->
-    <div id="mapid" style="width: 100%; height: 300px;"></div>
+    <div id="mapid"></div>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script>
-        var mymap = L.map('mapid').setView([-33.4489, -70.6693], 13); // Santiago, Chile
+        var mymap = L.map('mapid').setView([-33.4526866, -70.5921727], 17); // INACAP Ñuñoa
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 18,
             attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
         }).addTo(mymap);
-        L.marker([-33.4489, -70.6693]).addTo(mymap)
-            .bindPopup("<b>Alma Latina</b><br>Santiago, Chile").openPopup();
+
+        L.marker([-33.4526866, -70.5921727]).addTo(mymap)
+            .bindPopup("<b>INACAP Ñuñoa</b><br>Brown Norte 290, Ñuñoa").openPopup();
+
         mymap.scrollWheelZoom.disable();
         mymap.touchZoom.disable();
     </script>
@@ -158,7 +144,6 @@
     <footer id="tempaltemo_footer">
         <div class="container">
             <div class="row">
-
                 <div class="col-md-4 pt-5">
                     <h2 class="h2 text-pink border-bottom pb-3 border-light logo">Alma Latina</h2>
                     <ul class="list-unstyled text-light footer-link-list">
@@ -167,7 +152,6 @@
                         <li><i class="fa fa-envelope fa-fw"></i> <a href="mailto:info@almalatina.com">info@almalatina.com</a></li>
                     </ul>
                 </div>
-
                 <div class="col-md-4 pt-5">
                     <h2 class="h2 text-light border-bottom pb-3 border-light">Productos</h2>
                     <ul class="list-unstyled text-light footer-link-list">
@@ -177,26 +161,5 @@
                         <li><a href="#">Estilo Femenino</a></li>
                     </ul>
                 </div>
-
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">Más Información</h2>
-                    <ul class="list-unstyled text-light footer-link-list">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="about.html">Nosotros</a></li>
-                        <li><a href="shop.html">Tienda</a></li>
-                        <li><a href="contact.html">Contacto</a></li>
-                    </ul>
-                </div>
-
-            </div>
-            <div class="w-100 bg-black py-3 text-light text-center">
-                Copyright &copy; 2025 Alma Latina | Diseñdo para fines educativos INACAP 2025 
-            </div>
-        </div>
-    </footer>
-
-    <script src="assets/js/jquery-1.11.0.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>
+                    <
