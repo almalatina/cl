@@ -76,86 +76,64 @@
     </nav>
     <!-- Close Header -->
 
-    <!-- Banner Principal -->
-    <div id="alma-hero" class="carousel slide" data-bs-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-bs-target="#alma-hero" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#alma-hero" data-bs-slide-to="1"></li>
-            <li data-bs-target="#alma-hero" data-bs-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-
-           <!-- Video 1 -->
-<div class="carousel-item active">
-    <div class="container">
-        <div class="row p-5">
-            <div class="mx-auto col-md-6 col-lg-6 order-lg-last">
-                <!-- Video en loop sin sonido -->
-                <video class="img-fluid rounded" autoplay loop muted playsinline style="width:100%; height:auto; border-radius:0.5rem; object-fit:cover;">
-                    <source src="./assets/video/vino-lata-playa.mp4" type="video/mp4">
-                    Tu navegador no soporta la etiqueta de video.
-                </video>
+   <div id="alma-hero" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+            <video class="d-block w-100" autoplay muted loop playsinline preload="auto">
+                <source src="./assets/video/vino-lata-playa.mp4" type="video/mp4">
+            </video>
+            <div class="carousel-caption d-none d-md-block text-start">
+                <h1 class="h1 text-success">Alma Latina</h1>
+                <h3 class="h2">El vino en lata que celebra tu momento</h3>
+                <p>Disfruta un sorbo de frescura inspirado en los sabores y paisajes de Latinoamérica. Perfecto para tardes con amigas, afterwork y momentos de conexión y alegría.</p>
             </div>
-            <div class="col-lg-6 d-flex align-items-center">
-                <div class="text-align-left">
-                   <h1 class="h1 text-success">Alma Latina</h1>
-<h3 class="h2">El vino en lata que celebra tu momento</h3>
-<p>Disfruta un sorbo de frescura inspirado en los sabores y paisajes de Latinoamérica. Perfecto para tardes con amigas, afterwork y momentos de conexión y alegría.</p>
+        </div>
 
-                </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+            <video class="d-block w-100" autoplay muted loop playsinline preload="auto">
+                <source src="./assets/video/amigas.mp4" type="video/mp4">
+            </video>
+            <div class="carousel-caption d-none d-md-block text-start">
+                <h1 class="h1">Identidad Latina</h1>
+                <h3 class="h2">Cada lata es un viaje por Latinoamérica.</h3>
+                <p>Nuestro diseño refleja paisajes y sabores icónicos de cada país, desde los desiertos de Chile hasta la Amazonía brasileña. Una identidad para mujeres que disfrutan con estilo, emoción y conexión cultural.</p>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+            <video class="d-block w-100" autoplay muted loop playsinline preload="auto">
+                <source src="./assets/video/promotora.mp4" type="video/mp4">
+            </video>
+            <div class="carousel-caption d-none d-md-block text-start">
+                <h1 class="h1">Identidad Latina</h1>
+                <h3 class="h2">Cada lata es un viaje por Latinoamérica.</h3>
+                <p>Nuestro diseño refleja paisajes y sabores icónicos de cada país, desde los desiertos de Chile hasta la Amazonía brasileña. Una identidad para mujeres que disfrutan con estilo, emoción y conexión cultural.</p>
             </div>
         </div>
     </div>
+
+    <!-- Controles -->
+    <a class="carousel-control-prev" href="#alma-hero" role="button" data-bs-slide="prev">
+        <i class="fas fa-chevron-left"></i>
+    </a>
+    <a class="carousel-control-next" href="#alma-hero" role="button" data-bs-slide="next">
+        <i class="fas fa-chevron-right"></i>
+    </a>
 </div>
 
+<script>
+    // Forzar intervalo fijo y que ignore el estado del video
+    var myCarousel = document.querySelector('#alma-hero');
+    var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 5000, // 5 segundos
+        ride: 'carousel',
+        pause: false
+    });
+</script>
 
-            <!-- Imagen 2 -->
-            <div class="carousel-item">
-                <div class="container">
-                    <div class="row p-5">
-                        <div class="mx-auto col-md-6 col-lg-6 order-lg-last">
-                            <img class="img-fluid rounded" src="./assets/img/vino-lata-cordillera.jpg" alt="Cordillera de Chile y vino en lata">
-                        </div>
-                        <div class="col-lg-6 d-flex align-items-center">
-                            <div class="text-align-left">
-                                <h1 class="h1">Identidad Latina</h1>
-                                <h3 class="h2">Cada lata es un viaje por Latinoamérica.</h3>
-                                <p>
-Nuestro diseño refleja paisajes y sabores icónicos de cada país, desde los desiertos de Chile hasta la Amazonía brasileña. Una identidad para mujeres que disfrutan con estilo, emoción y conexión cultural.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Imagen 3 -->
-            <div class="carousel-item">
-                <div class="container">
-                    <div class="row p-5">
-                        <div class="mx-auto col-md-6 col-lg-6 order-lg-last">
-                            <img class="img-fluid rounded" src="./assets/img/vino-lata-amigas.jpg" alt="Amigas disfrutando vino en lata">
-                        </div>
-                        <div class="col-lg-6 d-flex align-items-center">
-                            <div class="text-align-left">
-                               <h1 class="h1">Diseñado para ti</h1>
-<h3 class="h2">Fresco, moderno y femenino</h3>
-<p>Alma Latina te acompaña en tus momentos de relax y celebración. Una nueva forma de disfrutar el vino, conectando sabores y emociones de toda Latinoamérica.</p>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#alma-hero" role="button" data-bs-slide="prev">
-            <i class="fas fa-chevron-left"></i>
-        </a>
-        <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#alma-hero" role="button" data-bs-slide="next">
-            <i class="fas fa-chevron-right"></i>
-        </a>
-    </div>
-    <!-- Fin Banner Principal -->
 
 <!-- Sección Instagram -->
 <section class="py-5 bg-white">
