@@ -59,11 +59,19 @@
             }
         }
 
-        /* Botón destacado */
-        .btn-warning {
+        /* Botón destacado con efecto */
+        .btn-efecto {
             background: linear-gradient(45deg, #ff3366, #ffcc33);
             border: none;
             color: #fff;
+            transition: all 0.4s ease;
+            box-shadow: 0 4px 15px rgba(255, 51, 102, 0.4);
+        }
+
+        .btn-efecto:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 25px rgba(255, 51, 102, 0.6);
+            background: linear-gradient(45deg, #ffcc33, #ff3366);
         }
 
         /* Iconos y enlaces hover */
@@ -153,8 +161,11 @@
                                 <h1 class="h1 text-warning">Alma Latina</h1>
                                 <h3 class="h2">El vino en lata que celebra tu momento</h3>
                                 <p>Alma Latina nace en Chile, tierra de viñas y tradición, pero se inspira en la riqueza de sabores y aromas de toda Latinoamérica. Cada sorbo combina la frescura del vino chileno con toques vibrantes de frutos y especias que evocan la calidez del sur del continente. Es la unión perfecta para compartir en tardes inolvidables, afterworks llenos de alegría o momentos de relajo, donde la autenticidad y el placer se encuentran en cada detalle.</p>
-                                <a href="shop.html" class="btn btn-warning btn-lg mt-3 shadow">Descubre nuestra
-                                    colección</a>
+                                
+                                <!-- Botón con efecto -->
+                                <a href="shop.html" class="btn btn-warning btn-lg mt-3 shadow btn-efecto">
+                                    Descubre nuestra colección
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -174,11 +185,10 @@
                                 <h1 class="h1 text-warning">Identidad Latina</h1>
                                 <h3 class="h2">Cada lata es un lugar</h3>
                                 <p>Alma Latina nació de la pasión por celebrar cada momento con estilo y autenticidad. 
-Creemos que cada sorbo debe ser una experiencia: fresca, alegre y llena de personalidad. 
-Nuestra misión es acompañar a mujeres jóvenes que disfrutan de los pequeños placeres de la vida, 
-compartiendo risas, paisajes y recuerdos inolvidables, siempre con un toque de frescura y modernidad.
-</p></p>
-                                <a href="shop.html" class="btn btn-warning btn-lg mt-3 shadow">Explora más</a>
+                                Creemos que cada sorbo debe ser una experiencia: fresca, alegre y llena de personalidad. 
+                                Nuestra misión es acompañar a mujeres jóvenes que disfrutan de los pequeños placeres de la vida, 
+                                compartiendo risas, paisajes y recuerdos inolvidables, siempre con un toque de frescura y modernidad.</p>
+                                <a href="shop.html" class="btn btn-warning btn-lg mt-3 shadow btn-efecto">Explora más</a>
                             </div>
                         </div>
                     </div>
@@ -199,7 +209,7 @@ compartiendo risas, paisajes y recuerdos inolvidables, siempre con un toque de f
                                 <h3 class="h2">Fresco, moderno y femenino</h3>
                                 <p>Nuestra Historia: Alma Latina nació para mujeres jóvenes que disfrutan de los pequeños
                                     placeres de la vida...</p>
-                                <a href="shop.html" class="btn btn-warning btn-lg mt-3 shadow">Conoce nuestra historia</a>
+                                <a href="shop.html" class="btn btn-warning btn-lg mt-3 shadow btn-efecto">Descubre nuestra colección</a>
                             </div>
                         </div>
                     </div>
