@@ -139,6 +139,12 @@
             </form>
         </div>
     </div>
+<div id="whatsapp-button"></div>
+<script>
+  fetch("assets/includes/whatsapp.html")
+    .then(res => res.text())
+    .then(html => document.getElementById("whatsapp-button").innerHTML = html);
+</script>
 
     <!-- Footer -->
     <footer id="tempaltemo_footer">

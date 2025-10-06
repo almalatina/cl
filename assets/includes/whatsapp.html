@@ -1,0 +1,60 @@
+<a href="https://wa.me/56997372194?text=Hola%20🍷%20me%20encanta%20Alma%20Latina..." class="whatsapp-float" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+<style>
+  /* Estilos del botón (los mismos que antes) */
+  .whatsapp-float {
+  position: fixed;
+  width: 65px;
+  height: 65px;
+  bottom: 25px;
+  right: 25px;
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 36px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+}
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #33e17d, #1ebc8b);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+  animation: none;
+}
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4); }
+  70% { box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+.whatsapp-float i {
+  line-height: 0;
+}
+
+/* Tooltip elegante */
+.whatsapp-float::after {
+  content: "¡Conversemos por WhatsApp!";
+  position: absolute;
+  right: 75px;
+  background: rgba(0,0,0,0.8);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(5px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+.whatsapp-float:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>

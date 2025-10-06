@@ -333,6 +333,12 @@ Tip educativo: Representa la frescura y alegría de Colombia en cada sorbo.">Ver
     </div>
 </section>
 
+<div id="whatsapp-button"></div>
+<script>
+  fetch("assets/includes/whatsapp.html")
+    .then(res => res.text())
+    .then(html => document.getElementById("whatsapp-button").innerHTML = html);
+</script>
 
  <!-- Footer -->
 <footer class="bg-dark" id="alma_footer">
